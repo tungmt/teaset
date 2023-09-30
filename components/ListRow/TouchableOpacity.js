@@ -3,8 +3,9 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 
-import {Platform, TouchableWithoutFeedback, Animated, ViewPropTypes, Easing} from 'react-native';
+import {Platform, TouchableWithoutFeedback, Animated, Easing} from 'react-native';
 import flattenStyle from 'react-native/Libraries/StyleSheet/flattenStyle';
+import {ViewPropTypes} from 'deprecated-react-native-prop-types'
 
 if (Platform.constants.reactNativeVersion.major === 0 && Platform.constants.reactNativeVersion.minor < 62) {
   console.error('this teaset edition need react native 0.62.0 or above, please use teaset@0.7.1 in earlier version of react native');
